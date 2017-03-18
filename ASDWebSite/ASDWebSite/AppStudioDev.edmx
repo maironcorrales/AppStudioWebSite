@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AppStudioDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="imagenesProyectos">
+          <Key>
+            <PropertyRef Name="idimagen" />
+          </Key>
+          <Property Name="idimagen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ruta" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="proyectos_idproyecto" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="personal">
+          <Key>
+            <PropertyRef Name="idpersona" />
+          </Key>
+          <Property Name="idpersona" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="puesto" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="imagen" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="proyectos">
+          <Key>
+            <PropertyRef Name="idproyecto" />
+          </Key>
+          <Property Name="idproyecto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="imagenLogo" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="puestos">
+          <Key>
+            <PropertyRef Name="idpuesto" />
+          </Key>
+          <Property Name="idpuesto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="requerimientos" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="estado" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="servicios">
+          <Key>
+            <PropertyRef Name="idservicios" />
+          </Key>
+          <Property Name="idservicios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="imagen" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="usuarios_id_usuario" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreUsuario" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="contrasenna" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="tipo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="videosProyectos">
+          <Key>
+            <PropertyRef Name="idvideo" />
+          </Key>
+          <Property Name="idvideo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ruta" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="proyectos_idproyecto" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__imagenesP__proye__1A14E395">
+          <End Role="proyectos" Type="Self.proyectos" Multiplicity="1" />
+          <End Role="imagenesProyectos" Type="Self.imagenesProyectos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="proyectos">
+              <PropertyRef Name="idproyecto" />
+            </Principal>
+            <Dependent Role="imagenesProyectos">
+              <PropertyRef Name="proyectos_idproyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__servicios__usuar__1367E606">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="servicios" Type="Self.servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="servicios">
+              <PropertyRef Name="usuarios_id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__videosPro__proye__1CF15040">
+          <End Role="proyectos" Type="Self.proyectos" Multiplicity="1" />
+          <End Role="videosProyectos" Type="Self.videosProyectos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="proyectos">
+              <PropertyRef Name="idproyecto" />
+            </Principal>
+            <Dependent Role="videosProyectos">
+              <PropertyRef Name="proyectos_idproyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AppStudioDBModelStoreContainer">
+          <EntitySet Name="imagenesProyectos" EntityType="Self.imagenesProyectos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="personal" EntityType="Self.personal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="proyectos" EntityType="Self.proyectos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="puestos" EntityType="Self.puestos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="servicios" EntityType="Self.servicios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="videosProyectos" EntityType="Self.videosProyectos" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__imagenesP__proye__1A14E395" Association="Self.FK__imagenesP__proye__1A14E395">
+            <End Role="proyectos" EntitySet="proyectos" />
+            <End Role="imagenesProyectos" EntitySet="imagenesProyectos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__servicios__usuar__1367E606" Association="Self.FK__servicios__usuar__1367E606">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="servicios" EntitySet="servicios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__videosPro__proye__1CF15040" Association="Self.FK__videosPro__proye__1CF15040">
+            <End Role="proyectos" EntitySet="proyectos" />
+            <End Role="videosProyectos" EntitySet="videosProyectos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AppStudioDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="imagenesProyectos">
+          <Key>
+            <PropertyRef Name="idimagen" />
+          </Key>
+          <Property Name="idimagen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ruta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="proyectos_idproyecto" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="proyectos" Relationship="Self.FK__imagenesP__proye__1A14E395" FromRole="imagenesProyectos" ToRole="proyectos" />
+        </EntityType>
+        <EntityType Name="personal">
+          <Key>
+            <PropertyRef Name="idpersona" />
+          </Key>
+          <Property Name="idpersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="puesto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="imagen" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="proyectos">
+          <Key>
+            <PropertyRef Name="idproyecto" />
+          </Key>
+          <Property Name="idproyecto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="imagenLogo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="imagenesProyectos" Relationship="Self.FK__imagenesP__proye__1A14E395" FromRole="proyectos" ToRole="imagenesProyectos" />
+          <NavigationProperty Name="videosProyectos" Relationship="Self.FK__videosPro__proye__1CF15040" FromRole="proyectos" ToRole="videosProyectos" />
+        </EntityType>
+        <EntityType Name="puestos">
+          <Key>
+            <PropertyRef Name="idpuesto" />
+          </Key>
+          <Property Name="idpuesto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="requerimientos" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="estado" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="servicios">
+          <Key>
+            <PropertyRef Name="idservicios" />
+          </Key>
+          <Property Name="idservicios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="imagen" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuarios_id_usuario" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="usuarios" Relationship="Self.FK__servicios__usuar__1367E606" FromRole="servicios" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreUsuario" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contrasenna" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tipo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="servicios" Relationship="Self.FK__servicios__usuar__1367E606" FromRole="usuarios" ToRole="servicios" />
+        </EntityType>
+        <EntityType Name="videosProyectos">
+          <Key>
+            <PropertyRef Name="idvideo" />
+          </Key>
+          <Property Name="idvideo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ruta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="proyectos_idproyecto" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="proyectos" Relationship="Self.FK__videosPro__proye__1CF15040" FromRole="videosProyectos" ToRole="proyectos" />
+        </EntityType>
+        <Association Name="FK__imagenesP__proye__1A14E395">
+          <End Role="proyectos" Type="Self.proyectos" Multiplicity="1" />
+          <End Role="imagenesProyectos" Type="Self.imagenesProyectos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="proyectos">
+              <PropertyRef Name="idproyecto" />
+            </Principal>
+            <Dependent Role="imagenesProyectos">
+              <PropertyRef Name="proyectos_idproyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__videosPro__proye__1CF15040">
+          <End Role="proyectos" Type="Self.proyectos" Multiplicity="1" />
+          <End Role="videosProyectos" Type="Self.videosProyectos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="proyectos">
+              <PropertyRef Name="idproyecto" />
+            </Principal>
+            <Dependent Role="videosProyectos">
+              <PropertyRef Name="proyectos_idproyecto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__servicios__usuar__1367E606">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="servicios" Type="Self.servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="servicios">
+              <PropertyRef Name="usuarios_id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AppStudioDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="imagenesProyectos" EntityType="Self.imagenesProyectos" />
+          <EntitySet Name="personal" EntityType="Self.personal" />
+          <EntitySet Name="proyectos" EntityType="Self.proyectos" />
+          <EntitySet Name="puestos" EntityType="Self.puestos" />
+          <EntitySet Name="servicios" EntityType="Self.servicios" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+          <EntitySet Name="videosProyectos" EntityType="Self.videosProyectos" />
+          <AssociationSet Name="FK__imagenesP__proye__1A14E395" Association="Self.FK__imagenesP__proye__1A14E395">
+            <End Role="proyectos" EntitySet="proyectos" />
+            <End Role="imagenesProyectos" EntitySet="imagenesProyectos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__videosPro__proye__1CF15040" Association="Self.FK__videosPro__proye__1CF15040">
+            <End Role="proyectos" EntitySet="proyectos" />
+            <End Role="videosProyectos" EntitySet="videosProyectos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__servicios__usuar__1367E606" Association="Self.FK__servicios__usuar__1367E606">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="servicios" EntitySet="servicios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AppStudioDBModelStoreContainer" CdmEntityContainer="AppStudioDBEntities">
+          <EntitySetMapping Name="imagenesProyectos">
+            <EntityTypeMapping TypeName="AppStudioDBModel.imagenesProyectos">
+              <MappingFragment StoreEntitySet="imagenesProyectos">
+                <ScalarProperty Name="idimagen" ColumnName="idimagen" />
+                <ScalarProperty Name="ruta" ColumnName="ruta" />
+                <ScalarProperty Name="proyectos_idproyecto" ColumnName="proyectos_idproyecto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="personal">
+            <EntityTypeMapping TypeName="AppStudioDBModel.personal">
+              <MappingFragment StoreEntitySet="personal">
+                <ScalarProperty Name="idpersona" ColumnName="idpersona" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="puesto" ColumnName="puesto" />
+                <ScalarProperty Name="imagen" ColumnName="imagen" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="proyectos">
+            <EntityTypeMapping TypeName="AppStudioDBModel.proyectos">
+              <MappingFragment StoreEntitySet="proyectos">
+                <ScalarProperty Name="idproyecto" ColumnName="idproyecto" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="imagenLogo" ColumnName="imagenLogo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="puestos">
+            <EntityTypeMapping TypeName="AppStudioDBModel.puestos">
+              <MappingFragment StoreEntitySet="puestos">
+                <ScalarProperty Name="idpuesto" ColumnName="idpuesto" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="requerimientos" ColumnName="requerimientos" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="servicios">
+            <EntityTypeMapping TypeName="AppStudioDBModel.servicios">
+              <MappingFragment StoreEntitySet="servicios">
+                <ScalarProperty Name="idservicios" ColumnName="idservicios" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="imagen" ColumnName="imagen" />
+                <ScalarProperty Name="usuarios_id_usuario" ColumnName="usuarios_id_usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="AppStudioDBModel.usuarios">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+                <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+                <ScalarProperty Name="contrasenna" ColumnName="contrasenna" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="videosProyectos">
+            <EntityTypeMapping TypeName="AppStudioDBModel.videosProyectos">
+              <MappingFragment StoreEntitySet="videosProyectos">
+                <ScalarProperty Name="idvideo" ColumnName="idvideo" />
+                <ScalarProperty Name="ruta" ColumnName="ruta" />
+                <ScalarProperty Name="proyectos_idproyecto" ColumnName="proyectos_idproyecto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
