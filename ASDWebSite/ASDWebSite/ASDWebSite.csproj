@@ -76,8 +76,29 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdministratorPanel.aspx" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\ie8.css" />
+    <Content Include="assets\css\ie9.css" />
+    <Content Include="assets\css\images\arrow.svg" />
+    <Content Include="assets\css\images\ie\banner-overlay.png" />
+    <Content Include="assets\css\images\overlay.png" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\js\ie\html5shiv.js" />
+    <Content Include="assets\js\ie\PIE.htc" />
+    <Content Include="assets\js\ie\respond.min.js" />
+    <Content Include="assets\js\jquery.dropotron.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.scrollex.min.js" />
+    <Content Include="assets\js\jquery.scrolly.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\skel.min.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="Careers.aspx" />
     <Content Include="elements.html" />
     <Content Include="left-sidebar.html" />
+    <Content Include="Login.aspx" />
     <Content Include="no-sidebar.html" />
     <Content Include="packages.config" />
     <EntityDeploy Include="AppStudioDev.edmx">
@@ -87,6 +108,18 @@
     <Content Include="AppStudioDev.edmx.diagram">
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
     </Content>
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\sass\ie8.scss" />
+    <Content Include="assets\sass\ie9.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_skel.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\main.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -105,11 +138,19 @@
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
       <LastGenOutput>AppStudioDev.cs</LastGenOutput>
     </Content>
-    <Content Include="HomePage.aspx" />
+    <Content Include="Homepage.aspx" />
     <Content Include="right-sidebar.html" />
+    <Content Include="shortcut\shortcut.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorPanel.aspx.cs">
+      <DependentUpon>AdministratorPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorPanel.aspx.designer.cs">
+      <DependentUpon>AdministratorPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppStudioDev.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,21 +166,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Careers.aspx.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Careers.aspx.designer.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Data\MediaData.cs" />
     <Compile Include="Data\PersonalData.cs" />
     <Compile Include="Data\PositionsData.cs" />
     <Compile Include="Data\ProjectData.cs" />
     <Compile Include="Data\ServicesData.cs" />
     <Compile Include="Data\UsuariosData.cs" />
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="imagenesProyectos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Services\MediaService.cs" />
     <Compile Include="Services\PositionsService.cs" />
@@ -171,7 +226,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
     <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>

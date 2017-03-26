@@ -15,15 +15,15 @@ namespace ASDWebSite.Services
         public string DeleteImageService(int id)
         {
             if (data.DeleteImageOfProject(id))
-                return "Imágen eliminada con exitó";
-            else return "Ha ocurrido un error. Intentelo de nuevo más tarde";
+                return "Imágen eliminada con éxito";
+            else return "Ha ocurrido un error. Inténtelo de nuevo más tarde";
         }
 
         public string AddVideoService(videosProyectos video)
         {
             if (data.AddVideoToProject(video))
                 return "Video agregado correctamente.";
-            else return "Ha ocurrido un error. Intentelo de nuevo más tarde";
+            else return "Ha ocurrido un error. Inténtelo de nuevo más tarde";
         }
 
         public string DeleteVideoService(int id)

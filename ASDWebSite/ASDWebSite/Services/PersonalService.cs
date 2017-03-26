@@ -22,7 +22,7 @@ namespace ASDWebSite.Services
             if (data.AddPersonal(person))
                 return "Nuevo miembro de personal agregado con éxito";
             else
-                return "Ha ocurrido un error, intentelo de nuevo, más tarde.";
+                return "Ha ocurrido un error, inténtelo de nuevo, más tarde.";
         }
 
         public string DeletePersonService(int id)

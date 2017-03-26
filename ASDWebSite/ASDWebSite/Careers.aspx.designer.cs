@@ -10,7 +10,7 @@
 namespace ASDWebSite {
     
     
-    public partial class HomePage {
+    public partial class Careers {
         
         /// <summary>
         /// Control form1.

@@ -23,8 +23,8 @@ namespace ASDWebSite.Services
         public string AddProjectService(proyectos project)
         {
             if (data.AddProject(project))
-                return "El proyecto se ha agregado con exitó";
-            else return "Ha ocurrido un problema. Intentelo más tarde.";
+                return "El proyecto se ha agregado con éxito";
+            else return "Ha ocurrido un problema. Inténtelo más tarde.";
         }
 
         public string DeleteProjectService(int id)

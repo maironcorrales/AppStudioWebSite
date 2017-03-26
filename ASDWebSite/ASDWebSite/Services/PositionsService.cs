@@ -20,22 +20,22 @@ namespace ASDWebSite.Services
         public string DeletePositionService(int id)
         {
             if (data.DeletePosition(id))
-                return "El puesto ha sido borrado con exitó";
-            else return "Ha ocurrido un problema. Intentelo más tarde";
+                return "El puesto ha sido borrado con éxito";
+            else return "Ha ocurrido un problema. Inténtelo más tarde";
         }
 
         public string AddPositionService(puestos puesto)
         {
             if (data.AddPosition(puesto))
                 return "El puesto fue agregado.";
-            else return "Ha ocurrido un problema. Intentelo más tarde";
+            else return "Ha ocurrido un problema. Inténtelo más tarde";
         }
 
         public string UpdatePositionService(puestos puesto)
         {
             if (data.UpdatePosition(puesto))
                 return "El puesto fue agregado.";
-            else return "Ha ocurrido un problema. Intentelo más tarde";
+            else return "Ha ocurrido un problema. Inténtelo más tarde";
         }
     }
 }

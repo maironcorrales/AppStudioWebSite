@@ -20,22 +20,22 @@ namespace ASDWebSite.Services
         public string AddServiceService(servicios service)
         {
             if (data.AddService(service))
-                return "Servicio agregado con exitó";
-            else return "Ha ocurrido un error. Intentelo más tarde";
+                return "Servicio agregado con éxito";
+            else return "Ha ocurrido un error. Inténtelo más tarde";
         }
 
         public string DeleteServiceService(int id)
         {
             if (data.DeleteService(id))
                 return "Servicio eliminado correctamente";
-            else return "Ha ocurrido un error. Intentelo más tarde";
+            else return "Ha ocurrido un error. Inténtelo más tarde";
         }
 
         public string UpdateServiceService(servicios service)
         {
             if (data.UpdateService(service))
                 return "Servicio actualizado correctamente";
-            else return "Ha ocurrido un error. Intentelo más tarde";
+            else return "Ha ocurrido un error. Inténtelo más tarde";
         }
     }
 }
