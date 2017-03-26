@@ -13,9 +13,9 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
-<body>
+<body class="landing">
     <form id="form1" runat="server">
-        <body class="landing">
+        
             <div id="page-wrapper">
                 <!-- Header -->
                 <header id="header">
@@ -218,7 +218,7 @@
             <script src="assets/js/util.js"></script>
             <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
             <script src="assets/js/main.js"></script>
-        </body>
+      
     </form>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

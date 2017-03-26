@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Data\MediaData.cs" />
+    <Compile Include="Data\PersonalData.cs" />
+    <Compile Include="Data\PositionsData.cs" />
+    <Compile Include="Data\ProjectData.cs" />
+    <Compile Include="Data\ServicesData.cs" />
+    <Compile Include="Data\UsuariosData.cs" />
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +141,9 @@
     <Compile Include="imagenesProyectos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\MediaService.cs" />
+    <Compile Include="Services\PositionsService.cs" />
+    <Compile Include="Services\ServicesService.cs" />
     <Compile Include="personal.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
@@ -145,6 +154,9 @@
     <Compile Include="puestos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\PersonalService.cs" />
+    <Compile Include="Services\ProjectService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="servicios.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
