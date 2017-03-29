@@ -28,8 +28,9 @@
                             <a href="#">Quiénes Somos</a>
                             <ul>
                                 <li><a href="left-sidebar.html">Sobre Nosotros</a></li>
-                                <li><a href="right-sidebar.html">Personal</a></li>
-                                <li><a href="no-sidebar.html">Posiciones</a></li>
+                                <li><a href="Team.aspx">Personal</a></li>
+                                <li><a href="Careers.aspx">Posiciones</a></li>
+                                <li><a href="elements.html">Elements</a></li>
                                 <%-- <li>
                                         <a href="#">Submenu</a>
                                         <ul>
@@ -43,7 +44,11 @@
                         </li>
                         <li><a href="#services">Servicios</a></li>
                         <li><a href="#">Portafolio</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#contact">Contacto</a>
+                            <ul>
+                                <li><a href="#location">Ubicación</a></li>
+                            </ul>
+                        </li>
                         <li><a href="Login.aspx" class="button special">Sign In</a></li>
                     </ul>
                 </nav>
@@ -180,7 +185,7 @@
                 </div>
             </section>
             <!-- Five -->
-            <section class="wrapper style2 special fade">
+            <section id="location" class="wrapper style2 special fade">
                 <div class="container">
                     <header>
                         <h2>Nuestra Ubicación</h2>

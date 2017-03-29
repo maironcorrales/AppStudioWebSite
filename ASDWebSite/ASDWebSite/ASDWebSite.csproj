@@ -141,6 +141,7 @@
     <Content Include="Homepage.aspx" />
     <Content Include="right-sidebar.html" />
     <Content Include="shortcut\shortcut.png" />
+    <Content Include="Team.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +215,13 @@
     <Compile Include="Services\UserService.cs" />
     <Compile Include="servicios.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
     </Compile>
     <Compile Include="usuarios.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
