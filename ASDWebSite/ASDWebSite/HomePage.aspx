@@ -9,274 +9,479 @@
     <link rel="shortcut icon" href="shortcut/shortcut.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'/>
 </head>
-<body class="landing">
+<body class="scroll-assist">
     <form id="form1" runat="server">
-
-        <div id="page-wrapper">
-            <!-- Header -->
-            <header id="header">
-                <h1 id="logo"><a href="Homepage.aspx">AppStudio Developers</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li>
-                            <a href="#">Quiénes Somos</a>
-                            <ul>
-                                <li><a href="left-sidebar.html">Sobre Nosotros</a></li>
-                                <li><a href="Team.aspx">Personal</a></li>
-                                <li><a href="Careers.aspx">Posiciones</a></li>
-                                <li><a href="elements.html">Elements</a></li>
-                                <%-- <li>
-                                        <a href="#">Submenu</a>
-                                        <ul>
-                                            <li><a href="#">Option 1</a></li>
-                                            <li><a href="#">Option 2</a></li>
-                                            <li><a href="#">Option 3</a></li>
-                                            <li><a href="#">Option 4</a></li>
-                                        </ul>
-                                    </li>--%>
-                            </ul>
-                        </li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#contact">Contacto</a>
-                            <ul>
-                                <li><a href="#location">Ubicación</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="Login.aspx" class="button special">Sign In</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- Banner -->
-            <section id="banner">
-                <div class="content">
-                    <header>
-                        <h2>The future has landed</h2>
-                        <p>
-                            And there are no hoverboards or flying cars.<br />
-                            Just apps. Lots of mother flipping apps.
-                        </p>
-                    </header>
-                    <span class="image">
-                        <img src="images/pic01.jpg" alt="" /></span>
-                </div>
-                <a href="#one" class="goto-next scrolly">Next</a>
-            </section>
-            <!-- One -->
-            <section id="one" class="spotlight style1 bottom">
-                <span class="image fit main">
-                    <img src="images/pic02.jpg" alt="" /></span>
-                <div class="content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="4u 12u$(medium)">
-                                <header>
-                                    <h2>Odio faucibus ipsum integer consequat</h2>
-                                    <p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
-                                </header>
-                            </div>
-                            <div class="4u 12u$(medium)">
-                                <p>
-                                    Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.
-                                </p>
-                            </div>
-                            <div class="4u$ 12u$(medium)">
-                                <p>
-                                    Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.
-                                </p>
-                            </div>
-                        </div>
+    <div class="nav-container">
+            <a id="top"></a>
+            <nav class="transparent absolute">
+                <div class="nav-utility">                   
+                    <div class="module right">
+                        <a class="btn btn-sm hidden-xs hidden-sm hidden-md" href="Login.aspx">Login</a>
                     </div>
                 </div>
-                <a href="#two" class="goto-next scrolly">Next</a>
-            </section>
-            <!-- Two -->
-            <section id="two" class="spotlight style2 right">
-                <span class="image fit main">
-                    <img src="images/pic03.jpg" alt="" /></span>
-                <div class="content">
-                    <header>
-                        <h2>Interdum amet non magna accumsan</h2>
-                        <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-                    </header>
-                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button">Learn More</a></li>
-                    </ul>
-                </div>
-                <a href="#three" class="goto-next scrolly">Next</a>
-            </section>
-            <!-- Three -->
-            <section id="three" class="spotlight style3 left">
-                <span class="image fit main bottom">
-                    <img src="images/pic04.jpg" alt="" /></span>
-                <div class="content">
-                    <header>
-                        <h2>Interdum felis blandit praesent sed augue</h2>
-                        <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-                    </header>
-                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button">Learn More</a></li>
-                    </ul>
-                </div>
-                <a href="#four" class="goto-next scrolly">Next</a>
-            </section>
-            <!-- Four -->
-            <section id="services" class="wrapper style1 special fade-up">
-                <div class="container">
-                    <header class="major">
-                        <h2>Servicios</h2>
-                        <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
-                    </header>
-                    <div class="box alt">
-                        <div class="row uniform">
-                            <section class="4u 6u(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-area-chart"></span>
-                                <h3>Ipsum sed commodo</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                            <section class="4u 6u$(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-comment"></span>
-                                <h3>Eleifend lorem ornare</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                            <section class="4u$ 6u(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-flask"></span>
-                                <h3>Cubilia cep lobortis</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                            <section class="4u 6u$(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-paper-plane"></span>
-                                <h3>Non semper interdum</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                            <section class="4u 6u(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-file"></span>
-                                <h3>Odio laoreet accumsan</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                            <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                                <span class="icon alt major fa-lock"></span>
-                                <h3>Massa arcu accumsan</h3>
-                                <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-                            </section>
-                        </div>
+                <div class="nav-bar">
+                    <div class="module left" style="height:80px; ">                        
+                          <img class="logo logo-light" alt="Foundry" src="img/logo.png"  style="width:60px;"/> 
+                        <a><h4>                            
+                            <b>App Studio</b> Developers
+                        </h4></a>                       
                     </div>
-                    <footer class="major">
-                        <ul class="actions">
-                            <li><a href="#" class="button">Magna sed feugiat</a></li>
-                        </ul>
-                    </footer>
-                </div>
-            </section>
-            <!-- Five -->
-            <section id="location" class="wrapper style2 special fade">
-                <div class="container">
-                    <header>
-                        <h2>Nuestra Ubicación</h2>
-                        <p></p>
-                    </header>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15721.1300146203!2d-83.9826590187256!3d9.910413021020336!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1490505736822" width="100%" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>                                    
-            </section>
-            <section id="contact" class="wrapper style1 special fade">
-                <div class="container">                    
-                  <h2>Contacto</h2>
-                    <form method="post" action="#">
-                    <div class="row uniform 50%">
-                        <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Nombre" />
-                        </div>
-                        <div class="6u$ 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="" placeholder="Correo Electrónico" />
-                        </div>
-                        <div class="12u$">
-                            <div class="select-wrapper">
-                                <select name="category" id="category">
-                                    <option value="">- Category -</option>
-                                    <option value="1">Web</option>
-                                    <option value="1">Móvil</option>
-                                    <option value="1">Escritorio</option>
-                                    <option value="1">Otro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="4u 12u$(medium)">
-                            <input type="radio" id="priority-low" name="priority" checked />
-                            <label for="priority-low">Prioridad Baja</label>
-                        </div>
-                        <div class="4u 12u$(medium)">
-                            <input type="radio" id="priority-normal" name="priority">
-                            <label for="priority-normal">Prioridad Normal</label>
-                        </div>
-                        <div class="4u$ 12u$(medium)">
-                            <input type="radio" id="priority-high" name="priority">
-                            <label for="priority-high">Prioridad Alta</label>
-                        </div>
-                        <div class="6u 12u$(medium)">
-                            <input type="checkbox" id="copy" name="copy">
-                            <label for="copy">Enviar una copia de este mensaje a mi correo</label>
-                        </div>
-                        <div class="6u$ 12u$(medium)">
-                            <input type="checkbox" id="human" name="human" checked>
-                            <label for="human">No soy un robot</label>
-                        </div>
-                        <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Escriba su mensaje" rows="6"></textarea>
-                        </div>
-                        <div class="12u$">
-                            <ul class="actions">
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
                                 <li>
-                                    <input type="submit" value="Enviar" class="special" /></li>
+                                    <a href="Homepage.aspx">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a>
+                                        Sobre Nosotros
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="#about-us">Quiénes Somos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#location">Ubicación</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Redes Sociales</a>
+                                                </li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                                
                                 <li>
-                                    <input type="reset" value="Cancelar" /></li>
+                                    <a href="OurServices.aspx">
+                                        Servicios
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="Portfolio.aspx">
+                                        Portafolio
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="Careers.aspx">
+                                        Posiciones
+                                    </a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a>
+                                        Contacto
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="Contact.aspx">Contáctenos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Planner.aspx">Planee Su Proyecto</a>
+                                                </li>                                   
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>      
+                                <li>
+                                    <a>
+                                    </a>
+                                </li>                          
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+                        <div class="module widget-handle language left">
+                            <ul class="menu">
+                                <li class="has-dropdown">
+                                    <a href="#">ESP</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Portuguese</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </form>
-                </div>                
+                    <!--end of module group-->
+                </div>
+            </nav>
+        </div>
+        
+        <div class="main-container">
+            <section class="pt0 pb0">
+                <div class="slider-all-controls">
+                    <ul class="slides">
+                        <li class="vid-bg image-bg overlay pt240 pb240">
+                            <div class="background-image-holder">
+                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856">
+                            </div>
+                            <div class="fs-vid-background">
+                                <video muted loop>
+                                    <source src="video/video.webm" type="video/webm">
+                                    <source src="video/video.mp4" type="video/mp4">
+                                    <source src="video/video.ogv" type="video/ogg">
+                                </video>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h1 class="large">Flexslider + Video Backgrounds</h1>
+                                        <p class="lead">
+                                            Simple markup with intellegent auto play and pause functionality.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                            <!--end of container-->
+                        </li>
+                        <li class="vid-bg image-bg overlay pt240 pb240">
+                            <div class="background-image-holder">
+                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856">
+                            </div>
+                            <div class="fs-vid-background">
+                                <video muted loop>
+                                    <source src="video/video2.webm" type="video/webm">
+                                    <source src="video/video2.mp4" type="video/mp4">
+                                    <source src="video/video2.ogv" type="video/ogg">
+                                </video>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h1 class="large">Flexslider + Video Backgrounds</h1>
+                                        <p class="lead">
+                                            Simple markup with intellegent auto play and pause functionality.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                            <!--end of container-->
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <!-- Footer -->
-            <footer id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; AppStudio Developers. All rights reserved.</li>
-                    <%-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>--%>
-                </ul>
+            <section id="about-us" class="page-title page-title-2 image-bg overlay parallax">
+                <div class="background-image-holder">
+                    <img alt="Background Image" class="background-image" src="img/cover11.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="uppercase mb8">Quiénes Somos</h2>
+                            <p class="lead mb0">A descriptive subtitle for your page.</p>
+                        </div>                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <h3 class="mb64 mb-xs-24">Diversity and difference are our guiding principles.
+                                <br /> Our approach is tailored and unique to each client.</h3>
+                            <div class="tabbed-content button-tabs">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <div class="tab-title">
+                                            <span>History</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <span>Approach</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <span>Culture</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <span>Method</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of button tabs-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="p0">
+                <div class="containr">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 p0">
+                            <div class="image-tile inner-title hover-reveal text-center mb0">
+                                <img alt="Pic" src="img/team-1.jpg" />
+                                <div class="title">
+                                    <h5 class="uppercase mb0">Sally Marsh</h5>
+                                    <span>Creative Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 p0">
+                            <div class="image-tile inner-title hover-reveal text-center mb0">
+                                <img alt="Pic" src="img/team-2.jpg" />
+                                <div class="title">
+                                    <h5 class="uppercase mb0">Tim Foley</h5>
+                                    <span>iOS Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 p0">
+                            <div class="image-tile inner-title hover-reveal text-center mb0">
+                                <img alt="Pic" src="img/team-3.jpg" />
+                                <div class="title">
+                                    <h5 class="uppercase mb0">Jake Robbins</h5>
+                                    <span>Brand Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h4 class="uppercase mb64 mb-xs-40">Previous Collaborators</h4>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="logo-carousel">
+                            <ul class="slides">
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l1.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l2.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l3.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l4.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l1.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l2.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l3.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="Logo" src="img/l4.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end of logo slider-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="page-title page-title-4 bg-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="uppercase mb0">Nuestra Ubicación</h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section id="location" class="p0">
+                <div class="map-holder pt160 pb160">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15721.1300146203!2d-83.9826590187256!3d9.910413021020336!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1490505736822" width="100%" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>                                    
+              </div>
+            </section>
+            <section class="bg-dark pt64 pb64">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="mb8">Haga Su Proyecto Realidad</h2>
+                            <p class="lead mb40 mb-xs-24">
+                                Variant Page Builder, Over 100 Page Templates - The choice is clear.
+                            </p>
+                            <a class="btn btn-filled btn-lg mb0" href="Planner.aspx">Comience Ahora</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="footer-1 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="Logo" class="logo" src="img/logo-light.png" />
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Recent Posts</h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="#">Hugging pugs is super trendy</a>
+                                        <span class="date">February
+                                            <span class="number">14, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spinning vinyl is oh so cool</a>
+                                        <span class="date">February
+                                            <span class="number">9, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Superior theme design by pros</a>
+                                        <span class="date">January
+                                            <span class="number">27, 2015</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Latest Updates</h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed" data-feed-name="mrareweb">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Instagram</h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="mrareweb">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2016 - Medium Rare</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-vimeo-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
             </footer>
         </div>
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-        <script src="assets/js/main.js"></script>
 
     </form>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flickr.js"></script>
+    <script src="js/flexslider.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/twitterfetcher.min.js"></script>
+    <script src="js/spectragram.min.js"></script>
+    <script src="js/ytplayer.min.js"></script>
+    <script src="js/countdown.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
