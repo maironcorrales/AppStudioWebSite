@@ -1,0 +1,30 @@
+-----------------------------menu-----------------------
+
+1. Inicio.
+ lo primero que se ve en inicio es el slider....
+	-About Us (about 2 del template).
+		-Culture(about 2 del template).
+		-Personal(about 2 del template).
+		-History(about 2 del template).
+		-approach(about 2 del template).
+		-method(about 2 del template).
+	-Ubicacion (contact 1).
+	-Redes Sociales().
+2. Carrers.
+3. Login.
+4. Servicios (servicios 3)
+5. Contact us
+	- contacto normal(contact 2).
+	- planee su proyecto (contact 3).
+6. portafolio de proyectos. videos se vean con el local via modal. las imagenes asociadas a un proyecto que se vean 
+ahi puestas. 
+
+------------------------slider--------------------------
+
+slider de zoom par magenes--- tentativo video.
+----------------------------------------------------------
+
+botones redonditos y los botones encima de imagenes.
+
+-------------------------proyectos---------------------
+la pagina de todos los proyectos al escoger un proyecto me voy a la pagina de single (case 1).
