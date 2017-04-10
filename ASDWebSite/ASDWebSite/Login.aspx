@@ -6,86 +6,247 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Login</title>
-    <link rel="shortcut icon" href="shortcut/shortcut.png" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  
 </head>
-<body class="landing">
-    <form id="form1" runat="server">
-
-        <div id="page-wrapper">
-            <!-- Header -->
-            <header id="header">
-                <h1 id="logo"><a href="Homepage.aspx">AppStudio Developers</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="Homepage.aspx">Inicio</a></li>
-                        <li><a href="#" class="button special">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </header>            
-            <br />
-            <br />
-            <br />
-            <section id="contact" class="wrapper style1 special fade">
-                <div class="container">                    
-                  <h2>Log In</h2>
-                    <br />
-                    <br />
-                    <br />
-                    <form method="post" action="#">
-                    <div class="row uniform 50%">
-                        <div class="12u$">
-                            <input runat="server" type="text" name="name" id="txtusername" value="" placeholder="Nombre de Usuario" />
-                        </div>
-                        <br />
-                        <br />
-                        <div class="12u$">
-                            <input runat="server" type="password" name="password" id="txtpwd" value="" placeholder="Contraseña" />
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <div class="12u$">
-                            <ul class="actions">
+    <body class="scroll-assist">
+        <form id="form1" runat="server">
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="transparent absolute">                
+                <div class="nav-bar">
+                    <div class="module left" style="height:80px; ">                        
+                          <img class="logo logo-light" alt="Foundry" src="img/logo.png"  style="width:60px;"/> 
+                        <a><h4>                            
+                            <b>App Studio</b> Developers
+                        </h4></a>                       
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
                                 <li>
-                                    <asp:Button runat="server" ID="BtnLogin" OnClick="BtnLogin_Click" CssClass="special" Text="Ingresar"/>
+                                    <a href="Homepage.aspx">
+                                        Home
+                                    </a>
                                 </li>
+                                <li class="has-dropdown">
+                                    <a>
+                                        Sobre Nosotros
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="#about-us">Quiénes Somos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#location">Ubicación</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Redes Sociales</a>
+                                                </li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                                
                                 <li>
-                                    <input type="reset" value="Cancelar" /></li>
+                                    <a href="OurServices.aspx">
+                                        Servicios
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="Portfolio.aspx">
+                                        Portafolio
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="Careers.aspx">
+                                        Posiciones
+                                    </a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a>
+                                        Contacto
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="Contact.aspx">Contáctenos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Planner.aspx">Planee Su Proyecto</a>
+                                                </li>                                   
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>      
+                                <li>
+                                    <a>
+                                    </a>
+                                </li>                          
                             </ul>
                         </div>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+                        <!--end of menu module-->
+                        <div class="module widget-handle language left">
+                            <ul class="menu">
+                                <li class="has-dropdown">
+                                    <a href="#">ESP</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Portuguese</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </form>
-                </div>                
+                    <!--end of module group-->
+                </div>
+            </nav>
+        </div>
+        <div class="main-container">
+            <section class="cover fullscreen image-bg overlay">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/home12.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+                            <div class="feature bordered text-center">
+                                <h4 class="uppercase">Login Here</h4>
+                                <form class="text-left">
+                                    <input class="mb0" type="text" placeholder="Username" />
+                                    <input class="mb0" type="password" placeholder="Password" />
+                                    <input type="submit" value="Login" />
+                                </form>
+                                <p class="mb0">Forgot your password?
+                                    <a href="#">Click Here To Reset</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
             </section>
-            <!-- Footer -->
-            <footer id="footer">                
-                <ul class="copyright">
-                    <li>&copy; AppStudio Developers. All rights reserved.</li>
-                    <%-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>--%>
-                </ul>
+            <footer class="footer-1 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="Logo" class="logo" src="img/logo-light.png" />
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Recent Posts</h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="#">Hugging pugs is super trendy</a>
+                                        <span class="date">February
+                                            <span class="number">14, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spinning vinyl is oh so cool</a>
+                                        <span class="date">February
+                                            <span class="number">9, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Superior theme design by pros</a>
+                                        <span class="date">January
+                                            <span class="number">27, 2015</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Latest Updates</h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed" data-feed-name="mrareweb">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Instagram</h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="mrareweb">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2016 - Medium Rare</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-vimeo-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
             </footer>
         </div>
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-        <script src="assets/js/main.js"></script>
-    </form>
-</body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+        </form>
+    </body>
 </html>
