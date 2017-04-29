@@ -1,4 +1,6 @@
 ﻿using ASDWebSite.Data;
+using ASDWebSite.EntityFramework;
+
 namespace ASDWebSite.Services
 {
     public class MediaService

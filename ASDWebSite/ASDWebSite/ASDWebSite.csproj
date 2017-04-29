@@ -76,23 +76,339 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdministratorPanel.aspx" />
-    <Content Include="Careers.aspx" />
-    <Content Include="Contact.aspx" />
-    <Content Include="elements.html" />
-    <Content Include="img\logo.png" />
-    <Content Include="left-sidebar.html" />
-    <Content Include="Login.aspx" />
-    <Content Include="no-sidebar.html" />
-    <Content Include="OurServices.aspx" />
+    <Content Include="Resources\css\bootstrap.css" />
+    <Content Include="Resources\css\bootstrap.min.css" />
+    <Content Include="Resources\css\custom.css" />
+    <Content Include="Resources\css\et-line-icons.css" />
+    <Content Include="Resources\css\flexslider.css" />
+    <Content Include="Resources\css\font-awesome.min.css" />
+    <Content Include="Resources\css\font-dosis.css" />
+    <Content Include="Resources\css\font-georgia.css" />
+    <Content Include="Resources\css\font-montserrat.css" />
+    <Content Include="Resources\css\font-opensans.css" />
+    <Content Include="Resources\css\font-oswald.css" />
+    <Content Include="Resources\css\font-pathway.css" />
+    <Content Include="Resources\css\font-poppins.css" />
+    <Content Include="Resources\css\font-roboto.css" />
+    <Content Include="Resources\css\font-robotocondensed.css" />
+    <Content Include="Resources\css\font-titillium.css" />
+    <Content Include="Resources\css\lightbox.min.css" />
+    <Content Include="Resources\css\pe-icon-7-stroke.css" />
+    <Content Include="Resources\css\theme-chipotle.css" />
+    <Content Include="Resources\css\theme-fire.css" />
+    <Content Include="Resources\css\theme-gunmetal.css" />
+    <Content Include="Resources\css\theme-hyperblue.css" />
+    <Content Include="Resources\css\theme-nature.css" />
+    <Content Include="Resources\css\theme-navy.css" />
+    <Content Include="Resources\css\theme-nearblack.css" />
+    <Content Include="Resources\css\theme-offyellow.css" />
+    <Content Include="Resources\css\theme-orange.css" />
+    <Content Include="Resources\css\theme-purple.css" />
+    <Content Include="Resources\css\theme-red.css" />
+    <Content Include="Resources\css\theme-rose.css" />
+    <Content Include="Resources\css\theme-startup.css" />
+    <Content Include="Resources\css\theme.css" />
+    <Content Include="Resources\css\themify-icons.css" />
+    <Content Include="Resources\css\ytplayer.css" />
+    <Content Include="Resources\fonts\et-line.svg" />
+    <Content Include="Resources\fonts\fontawesome-webfont.svg" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Resources\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Resources\fonts\themify.svg" />
+    <Content Include="Resources\images\banner.jpg" />
+    <Content Include="Resources\images\pic01.jpg" />
+    <Content Include="Resources\images\pic02.jpg" />
+    <Content Include="Resources\images\pic03.jpg" />
+    <Content Include="Resources\images\pic04.jpg" />
+    <Content Include="Resources\images\pic05.jpg" />
+    <Content Include="Resources\images\pic06.jpg" />
+    <Content Include="Resources\images\pic07.jpg" />
+    <Content Include="Resources\images\pic08.jpg" />
+    <Content Include="Resources\js\bootstrap.js" />
+    <Content Include="Resources\js\bootstrap.min.js" />
+    <Content Include="Resources\js\countdown.min.js" />
+    <Content Include="Resources\js\flexslider.min.js" />
+    <Content Include="Resources\js\flickr.js" />
+    <Content Include="Resources\js\jquery.min.js" />
+    <Content Include="Resources\js\lightbox.min.js" />
+    <Content Include="Resources\js\masonry.min.js" />
+    <Content Include="Resources\js\parallax.js" />
+    <Content Include="Resources\js\scripts.js" />
+    <Content Include="Resources\js\smooth-scroll.min.js" />
+    <Content Include="Resources\js\spectragram.min.js" />
+    <Content Include="Resources\js\twitterfetcher.min.js" />
+    <Content Include="Resources\js\ytplayer.min.js" />
+    <Content Include="Resources\variant\builder.html" />
+    <Content Include="Resources\variant\css\normalize.css" />
+    <Content Include="Resources\variant\css\style.css" />
+    <Content Include="Resources\variant\css\variant-icons.css" />
+    <Content Include="Resources\variant\css\variant-social-icons.css" />
+    <Content Include="Resources\variant\fonts\variant-icons.svg" />
+    <Content Include="Resources\variant\fonts\variant-social.svg" />
+    <Content Include="Resources\variant\img\checkerboard.png" />
+    <Content Include="Resources\variant\img\flickr.png" />
+    <Content Include="Resources\variant\img\fonts\dosis.png" />
+    <Content Include="Resources\variant\img\fonts\montserrat.png" />
+    <Content Include="Resources\variant\img\fonts\opensans.png" />
+    <Content Include="Resources\variant\img\fonts\oswald.png" />
+    <Content Include="Resources\variant\img\fonts\poppins.png" />
+    <Content Include="Resources\variant\img\fonts\raleway.png" />
+    <Content Include="Resources\variant\img\fonts\roboto.png" />
+    <Content Include="Resources\variant\img\fonts\robotocondensed.png" />
+    <Content Include="Resources\variant\img\fonts\titillium.png" />
+    <Content Include="Resources\variant\img\full-logo.png" />
+    <Content Include="Resources\variant\img\instagram.png" />
+    <Content Include="Resources\variant\img\mailchimp-cmonitor.png" />
+    <Content Include="Resources\variant\img\mrare-colours.png" />
+    <Content Include="Resources\variant\img\mrare.png" />
+    <Content Include="Resources\variant\img\new.png" />
+    <Content Include="Resources\variant\img\requires-maps-api-key.png" />
+    <Content Include="Resources\variant\img\sections\variant-banner-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-banner-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-banner-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-blog-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-blog-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-coming-soon-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-contact-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-countdown-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-countdown-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-cta-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-gallery-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-gallery-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-gallery-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-gallery-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-header-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-10.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-8.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-icons-9.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-image-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-image-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-image-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-image-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-logos-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-pricing-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-pricing-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-pricing-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-projects-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-shop-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-10.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-11.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-12.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-13.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-14.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-15.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-8.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-slider-9.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-social-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-social-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-social-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-tabs-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-tabs-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-tabs-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-tabs-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-tabs-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-testimonial-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-10.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-11.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-8.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-text-9.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-10.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-11.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-12.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-13.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-8.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-textimage-9.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-3.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-4.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-5.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-6.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-7.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-title-8.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-video-1.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-video-2.jpg" />
+    <Content Include="Resources\variant\img\sections\variant-video-3.jpg" />
+    <Content Include="Resources\variant\img\variant-features-1.png" />
+    <Content Include="Resources\variant\img\variant-features-2.png" />
+    <Content Include="Resources\variant\img\variant-features-3.png" />
+    <Content Include="Resources\variant\img\variant.png" />
+    <Content Include="Resources\variant\img\vlogo.png" />
+    <Content Include="Resources\variant\img\youtube-vimeo.png" />
+    <Content Include="Resources\variant\js\alterClass.js" />
+    <Content Include="Resources\variant\js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Resources\variant\js\jquery.js" />
+    <Content Include="Resources\variant\js\jsZip.js" />
+    <Content Include="Resources\variant\js\reInit.js" />
+    <Content Include="Resources\variant\js\saveAs.js" />
+    <Content Include="Resources\variant\js\simpleModal.js" />
+    <Content Include="Resources\variant\js\storage2.js" />
+    <Content Include="Resources\variant\js\underscore.min.js" />
+    <Content Include="Resources\variant\js\variant.js" />
+    <Content Include="Resources\variant\licenses\LICENSES.txt" />
+    <Content Include="Resources\variant\theme\css\bootstrap.css" />
+    <Content Include="Resources\variant\theme\css\bootstrap.min.css" />
+    <Content Include="Resources\variant\theme\css\custom.css" />
+    <Content Include="Resources\variant\theme\css\et-line-icons.css" />
+    <Content Include="Resources\variant\theme\css\flexslider.css" />
+    <Content Include="Resources\variant\theme\css\font-awesome.min.css" />
+    <Content Include="Resources\variant\theme\css\font-dosis.css" />
+    <Content Include="Resources\variant\theme\css\font-georgia.css" />
+    <Content Include="Resources\variant\theme\css\font-montserrat.css" />
+    <Content Include="Resources\variant\theme\css\font-opensans.css" />
+    <Content Include="Resources\variant\theme\css\font-oswald.css" />
+    <Content Include="Resources\variant\theme\css\font-pathway.css" />
+    <Content Include="Resources\variant\theme\css\font-poppins.css" />
+    <Content Include="Resources\variant\theme\css\font-roboto.css" />
+    <Content Include="Resources\variant\theme\css\font-robotocondensed.css" />
+    <Content Include="Resources\variant\theme\css\font-titillium.css" />
+    <Content Include="Resources\variant\theme\css\lightbox.min.css" />
+    <Content Include="Resources\variant\theme\css\pe-icon-7-stroke.css" />
+    <Content Include="Resources\variant\theme\css\theme-chipotle.css" />
+    <Content Include="Resources\variant\theme\css\theme-fire.css" />
+    <Content Include="Resources\variant\theme\css\theme-gunmetal.css" />
+    <Content Include="Resources\variant\theme\css\theme-hyperblue.css" />
+    <Content Include="Resources\variant\theme\css\theme-nature.css" />
+    <Content Include="Resources\variant\theme\css\theme-navy.css" />
+    <Content Include="Resources\variant\theme\css\theme-nearblack.css" />
+    <Content Include="Resources\variant\theme\css\theme-offyellow.css" />
+    <Content Include="Resources\variant\theme\css\theme-orange.css" />
+    <Content Include="Resources\variant\theme\css\theme-purple.css" />
+    <Content Include="Resources\variant\theme\css\theme-red.css" />
+    <Content Include="Resources\variant\theme\css\theme-rose.css" />
+    <Content Include="Resources\variant\theme\css\theme-startup.css" />
+    <Content Include="Resources\variant\theme\css\theme.css" />
+    <Content Include="Resources\variant\theme\css\themify-icons.css" />
+    <Content Include="Resources\variant\theme\css\ytplayer.css" />
+    <Content Include="Resources\variant\theme\fonts\et-line.svg" />
+    <Content Include="Resources\variant\theme\fonts\fontawesome-webfont.svg" />
+    <Content Include="Resources\variant\theme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Resources\variant\theme\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Resources\variant\theme\fonts\themify.svg" />
+    <Content Include="Resources\variant\theme\img\lightbox\close.png" />
+    <Content Include="Resources\variant\theme\img\lightbox\loading.gif" />
+    <Content Include="Resources\variant\theme\img\lightbox\next.png" />
+    <Content Include="Resources\variant\theme\img\lightbox\prev.png" />
+    <Content Include="Resources\variant\theme\js\bootstrap.js" />
+    <Content Include="Resources\variant\theme\js\bootstrap.min.js" />
+    <Content Include="Resources\variant\theme\js\countdown.min.js" />
+    <Content Include="Resources\variant\theme\js\flexslider.min.js" />
+    <Content Include="Resources\variant\theme\js\flickr.js" />
+    <Content Include="Resources\variant\theme\js\jquery.min.js" />
+    <Content Include="Resources\variant\theme\js\lightbox.min.js" />
+    <Content Include="Resources\variant\theme\js\masonry.min.js" />
+    <Content Include="Resources\variant\theme\js\parallax.js" />
+    <Content Include="Resources\variant\theme\js\scripts.js" />
+    <Content Include="Resources\variant\theme\js\smooth-scroll.min.js" />
+    <Content Include="Resources\variant\theme\js\spectragram.min.js" />
+    <Content Include="Resources\variant\theme\js\twitterfetcher.min.js" />
+    <Content Include="Resources\variant\theme\js\ytplayer.min.js" />
+    <Content Include="Resources\video\video.mp4" />
+    <Content Include="Resources\video\video2.mp4" />
+    <Content Include="WebForms\AdministratorPanel.aspx" />
+    <Content Include="WebForms\Careers.aspx" />
+    <Content Include="WebForms\Contact.aspx" />
+    <Content Include="WebForms\Login.aspx" />
+    <Content Include="WebForms\OurServices.aspx" />
     <Content Include="packages.config" />
-    <EntityDeploy Include="AppStudioDev.edmx">
+    <EntityDeploy Include="EntityFramework\AppStudioDev.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AppStudioDev.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="AppStudioDev.edmx.diagram">
+    <Content Include="EntityFramework\AppStudioDev.edmx.diagram">
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
     </Content>
+    <Content Include="Resources\css\less\theme.less" />
+    <Content Include="Resources\fonts\et-line.eot" />
+    <Content Include="Resources\fonts\et-line.ttf" />
+    <Content Include="Resources\fonts\et-line.woff" />
+    <Content Include="Resources\fonts\fontawesome-webfont.eot" />
+    <Content Include="Resources\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Resources\fonts\fontawesome-webfont.woff" />
+    <Content Include="Resources\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Resources\fonts\FontAwesome.otf" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Resources\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Resources\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Resources\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Resources\fonts\themify.eot" />
+    <Content Include="Resources\fonts\themify.ttf" />
+    <Content Include="Resources\fonts\themify.woff" />
+    <Content Include="Resources\variant\fonts\variant-icons.eot" />
+    <Content Include="Resources\variant\fonts\variant-icons.otf" />
+    <Content Include="Resources\variant\fonts\variant-icons.ttf" />
+    <Content Include="Resources\variant\fonts\variant-icons.woff" />
+    <Content Include="Resources\variant\fonts\variant-social.eot" />
+    <Content Include="Resources\variant\fonts\variant-social.ttf" />
+    <Content Include="Resources\variant\fonts\variant-social.woff" />
+    <Content Include="Resources\variant\theme\css\less\theme.less" />
+    <Content Include="Resources\variant\theme\fonts\et-line.eot" />
+    <Content Include="Resources\variant\theme\fonts\et-line.ttf" />
+    <Content Include="Resources\variant\theme\fonts\et-line.woff" />
+    <Content Include="Resources\variant\theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="Resources\variant\theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Resources\variant\theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="Resources\variant\theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Resources\variant\theme\fonts\FontAwesome.otf" />
+    <Content Include="Resources\variant\theme\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Resources\variant\theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Resources\variant\theme\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Resources\variant\theme\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Resources\variant\theme\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Resources\variant\theme\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Resources\variant\theme\fonts\themify.eot" />
+    <Content Include="Resources\variant\theme\fonts\themify.ttf" />
+    <Content Include="Resources\variant\theme\fonts\themify.woff" />
+    <Content Include="Resources\video\video.ogv" />
+    <Content Include="Resources\video\video.webm" />
+    <Content Include="Resources\video\video2.ogg" />
+    <Content Include="Resources\video\video2.webm" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,59 +417,57 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppStudioDev.Context.tt">
+    <Content Include="EntityFramework\AppStudioDev.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
       <LastGenOutput>AppStudioDev.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="AppStudioDev.tt">
+    <Content Include="EntityFramework\AppStudioDev.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
       <LastGenOutput>AppStudioDev.cs</LastGenOutput>
     </Content>
-    <Content Include="Homepage.aspx" />
-    <Content Include="Planner.aspx" />
-    <Content Include="Portfolio.aspx" />
-    <Content Include="right-sidebar.html" />
-    <Content Include="shortcut\shortcut.png" />
-    <Content Include="Team.aspx" />
+    <Content Include="WebForms\Homepage.aspx" />
+    <Content Include="WebForms\Planner.aspx" />
+    <Content Include="WebForms\Portfolio.aspx" />
+    <Content Include="WebForms\Team.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorPanel.aspx.cs">
+    <Compile Include="WebForms\AdministratorPanel.aspx.cs">
       <DependentUpon>AdministratorPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorPanel.aspx.designer.cs">
+    <Compile Include="WebForms\AdministratorPanel.aspx.designer.cs">
       <DependentUpon>AdministratorPanel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppStudioDev.Context.cs">
+    <Compile Include="EntityFramework\AppStudioDev.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppStudioDev.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppStudioDev.cs">
+    <Compile Include="EntityFramework\AppStudioDev.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppStudioDev.Designer.cs">
+    <Compile Include="EntityFramework\AppStudioDev.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppStudioDev.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Careers.aspx.cs">
+    <Compile Include="WebForms\Careers.aspx.cs">
       <DependentUpon>Careers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Careers.aspx.designer.cs">
+    <Compile Include="WebForms\Careers.aspx.designer.cs">
       <DependentUpon>Careers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="WebForms\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="WebForms\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\MediaData.cs" />
@@ -162,74 +476,74 @@
     <Compile Include="Data\ProjectData.cs" />
     <Compile Include="Data\ServicesData.cs" />
     <Compile Include="Data\UsuariosData.cs" />
-    <Compile Include="Homepage.aspx.cs">
+    <Compile Include="WebForms\Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
+    <Compile Include="WebForms\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="imagenesProyectos.cs">
+    <Compile Include="EntityFramework\imagenesProyectos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="WebForms\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="WebForms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="OurServices.aspx.cs">
+    <Compile Include="WebForms\OurServices.aspx.cs">
       <DependentUpon>OurServices.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OurServices.aspx.designer.cs">
+    <Compile Include="WebForms\OurServices.aspx.designer.cs">
       <DependentUpon>OurServices.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Planner.aspx.cs">
+    <Compile Include="WebForms\Planner.aspx.cs">
       <DependentUpon>Planner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Planner.aspx.designer.cs">
+    <Compile Include="WebForms\Planner.aspx.designer.cs">
       <DependentUpon>Planner.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Portfolio.aspx.cs">
+    <Compile Include="WebForms\Portfolio.aspx.cs">
       <DependentUpon>Portfolio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Portfolio.aspx.designer.cs">
+    <Compile Include="WebForms\Portfolio.aspx.designer.cs">
       <DependentUpon>Portfolio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Services\MediaService.cs" />
     <Compile Include="Services\PositionsService.cs" />
     <Compile Include="Services\ServicesService.cs" />
-    <Compile Include="personal.cs">
+    <Compile Include="EntityFramework\personal.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="proyectos.cs">
+    <Compile Include="EntityFramework\proyectos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
-    <Compile Include="puestos.cs">
+    <Compile Include="EntityFramework\puestos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
     <Compile Include="Services\PersonalService.cs" />
     <Compile Include="Services\ProjectService.cs" />
     <Compile Include="Services\UserService.cs" />
-    <Compile Include="servicios.cs">
+    <Compile Include="EntityFramework\servicios.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
-    <Compile Include="Team.aspx.cs">
+    <Compile Include="WebForms\Team.aspx.cs">
       <DependentUpon>Team.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Team.aspx.designer.cs">
+    <Compile Include="WebForms\Team.aspx.designer.cs">
       <DependentUpon>Team.aspx</DependentUpon>
     </Compile>
-    <Compile Include="usuarios.cs">
+    <Compile Include="EntityFramework\usuarios.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
-    <Compile Include="videosProyectos.cs">
+    <Compile Include="EntityFramework\videosProyectos.cs">
       <DependentUpon>AppStudioDev.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -237,13 +551,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="fonts\" />
-    <Folder Include="images\" />
-    <Folder Include="js\" />
-    <Folder Include="mail\" />
-    <Folder Include="variant\" />
-    <Folder Include="video\" />
+    <Folder Include="Resources\img\" />
+    <Folder Include="Resources\shortcut\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
