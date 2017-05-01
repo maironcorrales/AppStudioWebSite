@@ -6,16 +6,18 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>App Studio Developers</title>
-    <link rel="shortcut icon" href="Resources/shortcut/shortcut.png" />
+    <link rel="shortcut icon" href="../Resources/shortcut/shortcut.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="Resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="Resources/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Resources/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        
+    
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'/>
 </head>
 <body class="scroll-assist">
@@ -30,7 +32,7 @@
                 </div>
                 <div class="nav-bar">
                     <div class="module left" style="height:80px; ">                        
-                          <img class="logo logo-light" alt="Foundry" src="img/logo.png"  style="width:60px;"/> 
+                          <img class="logo logo-light" alt="Foundry" src="../Resources/img/logo.png"  style="width:60px;"/> 
                         <a><h4>                            
                             <b>App Studio</b> Developers
                         </h4></a>                       
@@ -132,13 +134,13 @@
                     <ul class="slides">
                         <li class="vid-bg image-bg overlay pt240 pb240">
                             <div class="background-image-holder">
-                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856">
+                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856"/>
                             </div>
                             <div class="fs-vid-background">
-                                <video muted loop>
-                                    <source src="video/video.webm" type="video/webm">
-                                    <source src="video/video.mp4" type="video/mp4">
-                                    <source src="video/video.ogv" type="video/ogg">
+                                <video muted="muted" loop="loop">
+                                    <source src="../Resources/video/video.webm" type="video/webm"/>
+                                    <source src="../Resources/video/video.mp4" type="video/mp4"/>
+                                    <source src="../Resources/video/video.ogv" type="video/ogg"/>
                                 </video>
                             </div>
                             <div class="container">
@@ -156,13 +158,13 @@
                         </li>
                         <li class="vid-bg image-bg overlay pt240 pb240">
                             <div class="background-image-holder">
-                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856">
+                                <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856"/>
                             </div>
                             <div class="fs-vid-background">
-                                <video muted loop>
-                                    <source src="video/video2.webm" type="video/webm">
-                                    <source src="video/video2.mp4" type="video/mp4">
-                                    <source src="video/video2.ogv" type="video/ogg">
+                                <video muted="muted" loop="loop">
+                                    <source src="../Resources/video/video2.webm" type="video/webm"/>
+                                    <source src="../Resources/video/video2.mp4" type="video/mp4"/>
+                                    <source src="../Resources/video/video2.ogv" type="video/ogg"/>
                                 </video>
                             </div>
                             <div class="container">
@@ -258,7 +260,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6 p0">
                             <div class="image-tile inner-title hover-reveal text-center mb0">
-                                <img alt="Pic" src="img/team-1.jpg" />
+                                <img alt="Pic" src="../Resources/img/team-1.jpg" />
                                 <div class="title">
                                     <h5 class="uppercase mb0">Sally Marsh</h5>
                                     <span>Creative Director</span>
@@ -267,7 +269,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6 p0">
                             <div class="image-tile inner-title hover-reveal text-center mb0">
-                                <img alt="Pic" src="img/team-2.jpg" />
+                                <img alt="Pic" src="../Resources/img/team-2.jpg" />
                                 <div class="title">
                                     <h5 class="uppercase mb0">Tim Foley</h5>
                                     <span>iOS Developer</span>
@@ -276,7 +278,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6 p0">
                             <div class="image-tile inner-title hover-reveal text-center mb0">
-                                <img alt="Pic" src="img/team-3.jpg" />
+                                <img alt="Pic" src="../Resources/img/team-3.jpg" />
                                 <div class="title">
                                     <h5 class="uppercase mb0">Jake Robbins</h5>
                                     <span>Brand Director</span>
@@ -470,18 +472,18 @@
         </div>
 
     </form>
-    <script src="Resources/js/jquery.min.js"></script>
-    <script src="Resources/js/bootstrap.min.js"></script>
-    <script src="Resources/js/flickr.js"></script>
-    <script src="Resources/js/flexslider.min.js"></script>
-    <script src="Resources/js/lightbox.min.js"></script>
-    <script src="Resources/js/masonry.min.js"></script>
-    <script src="Resources/js/twitterfetcher.min.js"></script>
-    <script src="Resources/js/spectragram.min.js"></script>
-    <script src="Resources/js/ytplayer.min.js"></script>
-    <script src="Resources/js/countdown.min.js"></script>
-    <script src="Resources/js/smooth-scroll.min.js"></script>
-    <script src="Resources/js/parallax.js"></script>
-    <script src="Resources/js/scripts.js"></script>
+    <script src="../Resources/js/jquery.min.js"></script>
+    <script src="../Resources/js/bootstrap.min.js"></script>
+    <script src="../Resources/js/flickr.js"></script>
+    <script src="../Resources/js/flexslider.min.js"></script>
+    <script src="../Resources/js/lightbox.min.js"></script>
+    <script src="../Resources/js/masonry.min.js"></script>
+    <script src="../Resources/js/twitterfetcher.min.js"></script>
+    <script src="../Resources/js/spectragram.min.js"></script>
+    <script src="../Resources/js/ytplayer.min.js"></script>
+    <script src="../Resources/js/countdown.min.js"></script>
+    <script src="../Resources/js/smooth-scroll.min.js"></script>
+    <script src="../Resources/js/parallax.js"></script>
+    <script src="../Resources/js/scripts.js"></script>
 </body>
 </html>
