@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\projectCB\OpticaCB\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -654,6 +657,7 @@
       <LastGenOutput>AppStudioDev.cs</LastGenOutput>
     </Content>
     <Content Include="WebForms\Homepage.aspx" />
+    <Content Include="WebForms\Panel.aspx" />
     <Content Include="WebForms\Planner.aspx" />
     <Content Include="WebForms\Portfolio.aspx" />
     <Content Include="WebForms\Team.aspx" />
@@ -725,6 +729,13 @@
     </Compile>
     <Compile Include="WebForms\OurServices.aspx.designer.cs">
       <DependentUpon>OurServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\Planner.aspx.cs">
       <DependentUpon>Planner.aspx</DependentUpon>

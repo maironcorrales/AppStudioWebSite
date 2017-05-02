@@ -1,33 +1,36 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ASDWebSite.Login" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Login</title>
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 </head>
-    <body class="scroll-assist">
-        <form id="form1" runat="server">
+<body class="scroll-assist">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class="nav-container">
             <a id="top"></a>
-            <nav class="transparent absolute">                
+            <nav class="transparent absolute">
                 <div class="nav-bar">
-                    <div class="module left" style="height:80px; ">                        
-                          <img class="logo logo-light" alt="Foundry" src="img/logo.png"  style="width:60px;"/> 
-                        <a><h4>                            
-                            <b>App Studio</b> Developers
-                        </h4></a>                       
+                    <div class="module left" style="height: 80px;">
+                        <img class="logo logo-light" alt="Foundry" src="img/logo.png" style="width: 60px;" />
+                        <a>
+                            <h4>
+                                <b>App Studio</b> Developers
+                            </h4>
+                        </a>
                     </div>
                     <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
                         <i class="ti-menu"></i>
@@ -36,13 +39,11 @@
                         <div class="module left">
                             <ul class="menu">
                                 <li>
-                                    <a href="Homepage.aspx">
-                                        Home
+                                    <a href="Homepage.aspx">Home
                                     </a>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a>
-                                        Sobre Nosotros
+                                    <a>Sobre Nosotros
                                     </a>
                                     <ul class="mega-menu">
                                         <li>
@@ -55,29 +56,25 @@
                                                 </li>
                                                 <li>
                                                     <a href="#">Redes Sociales</a>
-                                                </li>                                                
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>                                
+                                </li>
                                 <li>
-                                    <a href="OurServices.aspx">
-                                        Servicios
+                                    <a href="OurServices.aspx">Servicios
                                     </a>
-                                </li>                                
+                                </li>
                                 <li>
-                                    <a href="Portfolio.aspx">
-                                        Portafolio
+                                    <a href="Portfolio.aspx">Portafolio
                                     </a>
-                                </li>                                
+                                </li>
                                 <li>
-                                    <a href="Careers.aspx">
-                                        Posiciones
+                                    <a href="Careers.aspx">Posiciones
                                     </a>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a>
-                                        Contacto
+                                    <a>Contacto
                                     </a>
                                     <ul class="mega-menu">
                                         <li>
@@ -87,15 +84,14 @@
                                                 </li>
                                                 <li>
                                                     <a href="Planner.aspx">Planee Su Proyecto</a>
-                                                </li>                                   
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>      
+                                </li>
                                 <li>
-                                    <a>
-                                    </a>
-                                </li>                          
+                                    <a></a>
+                                </li>
                             </ul>
                         </div>
                         <!--end of menu module-->
@@ -130,11 +126,31 @@
                             <div class="feature bordered text-center">
                                 <h4 class="uppercase">Login Here</h4>
                                 <form class="text-left">
-                                    <input class="mb0" type="text" placeholder="Username" />
-                                    <input class="mb0" type="password" placeholder="Password" />
-                                    <input type="submit" value="Login" />
+                                    <input runat="server" class="mb0" id="username_txt" type="text" placeholder="Username" />
+                                    <input runat="server" class="mb0" id="password_txt" type="password" placeholder="Password" />
+                                    <input runat="server" type="submit" value="Login" />
+                                    <asp:Button runat="server" ID="processbtn" OnClick="processbtn_Click" Style="visibility: hidden;" />
                                 </form>
-                                <p class="mb0">Forgot your password?
+                                <asp:Panel ID="Panel1" Style="display: none" align="center" runat="server">
+                                    <div class="row mb48 mb-xs-0">
+                                        <div class="col-sm-4 text-center">
+                                            <div class="modal-container">
+                                                <a class="btn btn-lg btn-modal" href="#">
+                                                    <i class="ti-text"></i>Basic Text</a>
+                                                <div class="foundry_modal">
+                                                    <h4>Hubo un Error!</h4>
+                                                    <hr>
+                                                    <p runat="server" id="messageLogin">                                                       
+                                                    </p>
+                                                    <hr />
+                                                    <a id="btnCancel">Aceptar</a>
+                                                </div>
+                                            </div>
+                                            <!--end modal-->
+                                        </div>
+                                </asp:Panel>
+                                <p class="mb0">
+                                    Forgot your password?
                                     <a href="#">Click Here To Reset</a>
                                 </p>
                             </div>
@@ -143,6 +159,12 @@
                     <!--end of row-->
                 </div>
                 <!--end of container-->
+                <asp:ModalPopupExtender ID="ModalPopupExtender" runat="server"
+                    TargetControlID="processbtn"
+                    CancelControlID="btnCancel"
+                    PopupControlID="Panel1"
+                    Drag="true">
+                </asp:ModalPopupExtender>
             </section>
             <footer class="footer-1 bg-dark">
                 <div class="container">
@@ -247,6 +269,6 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
-        </form>
-    </body>
+    </form>
+</body>
 </html>
